@@ -1,4 +1,4 @@
-package rhel9
+package rhel10
 
 import (
 	"github.com/osbuild/images/pkg/distro"

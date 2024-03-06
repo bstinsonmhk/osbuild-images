@@ -1,4 +1,4 @@
-package rhel9
+package rhel10
 
 // This file defines package sets that are used by more than one image type.
 

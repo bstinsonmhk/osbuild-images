@@ -1,4 +1,4 @@
-package rhel9
+package rhel10
 
 import (
 	"fmt"
@@ -48,7 +48,6 @@ func bareMetalPackageSet(t *imageType) rpmmd.PackageSet {
 	ps := rpmmd.PackageSet{
 		Include: []string{
 			"@core",
-			"authselect-compat",
 			"chrony",
 			"cockpit-system",
 			"cockpit-ws",

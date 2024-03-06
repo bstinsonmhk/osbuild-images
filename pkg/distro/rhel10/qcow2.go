@@ -1,4 +1,4 @@
-package rhel9
+package rhel10
 
 import (
 	"github.com/osbuild/images/internal/common"
@@ -34,7 +34,6 @@ func qcow2CommonPackageSet(t *imageType) rpmmd.PackageSet {
 	ps := rpmmd.PackageSet{
 		Include: []string{
 			"@core",
-			"authselect-compat",
 			"chrony",
 			"cloud-init",
 			"cloud-utils-growpart",

@@ -1,4 +1,4 @@
-package rhel9
+package rhel10
 
 import (
 	"github.com/osbuild/images/internal/common"
@@ -182,7 +182,7 @@ func azurePackageSet(t *imageType) rpmmd.PackageSet {
 func azureRhuiPackageSet(t *imageType) rpmmd.PackageSet {
 	return rpmmd.PackageSet{
 		Include: []string{
-			"rhui-azure-rhel9",
+			"rhui-azure-rhel10",
 		},
 	}.Append(azureCommonPackageSet(t))
 }
@@ -620,7 +620,7 @@ var defaultAzureRhuiImageConfig = &distro.ImageConfig{
 func azureSapPackageSet(t *imageType) rpmmd.PackageSet {
 	return rpmmd.PackageSet{
 		Include: []string{
-			"rhui-azure-rhel9-sap-ha",
+			"rhui-azure-rhel10-sap-ha",
 		},
 	}.Append(azureCommonPackageSet(t)).Append(SapPackageSet(t))
 }

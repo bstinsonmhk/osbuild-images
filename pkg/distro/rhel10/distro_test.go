@@ -1,4 +1,4 @@
-package rhel9_test
+package rhel10_test
 
 import (
 	"fmt"

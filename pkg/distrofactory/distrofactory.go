@@ -6,6 +6,7 @@ import (
 
 	"github.com/osbuild/images/pkg/distro"
 	"github.com/osbuild/images/pkg/distro/fedora"
+	"github.com/osbuild/images/pkg/distro/rhel10"
 	"github.com/osbuild/images/pkg/distro/rhel7"
 	"github.com/osbuild/images/pkg/distro/rhel8"
 	"github.com/osbuild/images/pkg/distro/rhel9"
@@ -112,6 +113,7 @@ func NewDefault() *Factory {
 		rhel7.DistroFactory,
 		rhel8.DistroFactory,
 		rhel9.DistroFactory,
+		rhel10.DistroFactory,
 	)
 }
 

@@ -1,4 +1,4 @@
-package rhel9
+package rhel10
 
 import (
 	"fmt"
@@ -80,6 +80,22 @@ func TestDistroFactory(t *testing.T) {
 	}
 
 	testCases := []testCase{
+		{
+			strID:    "rhel-100",
+			expected: newDistro("rhel", 0),
+		},
+		{
+			strID:    "rhel-10.0",
+			expected: newDistro("rhel", 0),
+		},
+		{
+			strID:    "centos-10",
+			expected: newDistro("centos", -1),
+		},
+		{
+			strID:    "centos-10.0",
+			expected: nil,
+		},
 		{
 			strID:    "rhel-90",
 			expected: newDistro("rhel", 0),
